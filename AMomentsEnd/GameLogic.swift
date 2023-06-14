@@ -54,8 +54,19 @@ class GameLogic: ObservableObject {
             guard let self = self else {return}
             self.attackCountTimer += 0.01
             self.attackCountTimer = (self.attackCountTimer * 100 ).rounded() / 100
+            switch stage{
+            case 1 : if attackCountTimer>0.8{
+                self.gameOver=true
+                timer?.invalidate()
+            }
+            case 2 : if attackCountTimer>0.5{
+                self.gameOver=true
+                timer?.invalidate()
+            }
+            default : self.gameOver=false
+            }
         }
-        
+    
     }
     
     

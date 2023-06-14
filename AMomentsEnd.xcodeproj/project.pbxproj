@@ -22,16 +22,12 @@
 		CEF0994D2A383AA800A06B73 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = CEF0994C2A383AA800A06B73 /* SwiftFormat */; };
 		CEF0994F2A38529000A06B73 /* OnGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0994E2A38529000A06B73 /* OnGameView.swift */; };
 		CEF099512A39577C00A06B73 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF099502A39577C00A06B73 /* GameOverView.swift */; };
-		CEF099532A39581C00A06B73 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF099522A39581C00A06B73 /* ResultView.swift */; };
 		CEF099602A3998DC00A06B73 /* glyphlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEF099582A3998DC00A06B73 /* glyphlist.txt */; };
 		CEF099612A3998DC00A06B73 /* g_brushtappitsu_freeH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF099592A3998DC00A06B73 /* g_brushtappitsu_freeH.ttf */; };
-		CEF099622A3998DC00A06B73 /* fonttest1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF0995A2A3998DC00A06B73 /* fonttest1.png */; };
-		CEF099632A3998DC00A06B73 /* fonttest3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF0995B2A3998DC00A06B73 /* fonttest3.png */; };
-		CEF099642A3998DC00A06B73 /* fonttest2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF0995C2A3998DC00A06B73 /* fonttest2.png */; };
-		CEF099652A3998DC00A06B73 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEF0995D2A3998DC00A06B73 /* readme.txt */; };
 		CEF099662A3998DC00A06B73 /* g_brushtappitsu_freeR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF0995E2A3998DC00A06B73 /* g_brushtappitsu_freeR.ttf */; };
 		CEF099672A3998DC00A06B73 /* g_brushtappitsu_freeB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF0995F2A3998DC00A06B73 /* g_brushtappitsu_freeB.ttf */; };
 		CEF099692A399A0D00A06B73 /* BrinkEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF099682A399A0D00A06B73 /* BrinkEffect.swift */; };
+		CEF0996D2A39C83E00A06B73 /* fuwamocofont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF0996B2A39C83E00A06B73 /* fuwamocofont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,17 +64,13 @@
 		CEF099432A38303100A06B73 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		CEF0994E2A38529000A06B73 /* OnGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGameView.swift; sourceTree = "<group>"; };
 		CEF099502A39577C00A06B73 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
-		CEF099522A39581C00A06B73 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		CEF099562A3995F300A06B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEF099582A3998DC00A06B73 /* glyphlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glyphlist.txt; sourceTree = "<group>"; };
 		CEF099592A3998DC00A06B73 /* g_brushtappitsu_freeH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = g_brushtappitsu_freeH.ttf; sourceTree = "<group>"; };
-		CEF0995A2A3998DC00A06B73 /* fonttest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fonttest1.png; sourceTree = "<group>"; };
-		CEF0995B2A3998DC00A06B73 /* fonttest3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fonttest3.png; sourceTree = "<group>"; };
-		CEF0995C2A3998DC00A06B73 /* fonttest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fonttest2.png; sourceTree = "<group>"; };
-		CEF0995D2A3998DC00A06B73 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		CEF0995E2A3998DC00A06B73 /* g_brushtappitsu_freeR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = g_brushtappitsu_freeR.ttf; sourceTree = "<group>"; };
 		CEF0995F2A3998DC00A06B73 /* g_brushtappitsu_freeB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = g_brushtappitsu_freeB.ttf; sourceTree = "<group>"; };
 		CEF099682A399A0D00A06B73 /* BrinkEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrinkEffect.swift; sourceTree = "<group>"; };
+		CEF0996B2A39C83E00A06B73 /* fuwamocofont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fuwamocofont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,18 +123,18 @@
 		CEF099112A38038F00A06B73 /* AMomentsEnd */ = {
 			isa = PBXGroup;
 			children = (
-				CEF099572A3998DC00A06B73 /* g_brushtappitsu_free_012 */,
 				CEF099562A3995F300A06B73 /* Info.plist */,
 				CEF099412A38089A00A06B73 /* GameLogic.swift */,
 				CEF099142A38038F00A06B73 /* ContentView.swift */,
 				CEF099432A38303100A06B73 /* TitleView.swift */,
 				CEF0994E2A38529000A06B73 /* OnGameView.swift */,
 				CEF099502A39577C00A06B73 /* GameOverView.swift */,
-				CEF099522A39581C00A06B73 /* ResultView.swift */,
 				CEF099122A38038F00A06B73 /* AMomentsEndApp.swift */,
 				CEF0991B2A38039000A06B73 /* Persistence.swift */,
 				CEF0991D2A38039000A06B73 /* AMomentsEnd.xcdatamodeld */,
 				CEF099162A38039000A06B73 /* Assets.xcassets */,
+				CEF0996A2A39C83E00A06B73 /* fuwamocofont */,
+				CEF099572A3998DC00A06B73 /* g_brushtappitsu_free_012 */,
 				CEF099182A38039000A06B73 /* Preview Content */,
 				CEF099682A399A0D00A06B73 /* BrinkEffect.swift */,
 			);
@@ -179,14 +171,18 @@
 			children = (
 				CEF099582A3998DC00A06B73 /* glyphlist.txt */,
 				CEF099592A3998DC00A06B73 /* g_brushtappitsu_freeH.ttf */,
-				CEF0995A2A3998DC00A06B73 /* fonttest1.png */,
-				CEF0995B2A3998DC00A06B73 /* fonttest3.png */,
-				CEF0995C2A3998DC00A06B73 /* fonttest2.png */,
-				CEF0995D2A3998DC00A06B73 /* readme.txt */,
 				CEF0995E2A3998DC00A06B73 /* g_brushtappitsu_freeR.ttf */,
 				CEF0995F2A3998DC00A06B73 /* g_brushtappitsu_freeB.ttf */,
 			);
 			path = g_brushtappitsu_free_012;
+			sourceTree = "<group>";
+		};
+		CEF0996A2A39C83E00A06B73 /* fuwamocofont */ = {
+			isa = PBXGroup;
+			children = (
+				CEF0996B2A39C83E00A06B73 /* fuwamocofont.ttf */,
+			);
+			path = fuwamocofont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,15 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF099662A3998DC00A06B73 /* g_brushtappitsu_freeR.ttf in Resources */,
-				CEF099632A3998DC00A06B73 /* fonttest3.png in Resources */,
 				CEF099672A3998DC00A06B73 /* g_brushtappitsu_freeB.ttf in Resources */,
 				CEF099602A3998DC00A06B73 /* glyphlist.txt in Resources */,
 				CEF0991A2A38039000A06B73 /* Preview Assets.xcassets in Resources */,
+				CEF0996D2A39C83E00A06B73 /* fuwamocofont.ttf in Resources */,
 				CEF099612A3998DC00A06B73 /* g_brushtappitsu_freeH.ttf in Resources */,
-				CEF099642A3998DC00A06B73 /* fonttest2.png in Resources */,
 				CEF099172A38039000A06B73 /* Assets.xcassets in Resources */,
-				CEF099652A3998DC00A06B73 /* readme.txt in Resources */,
-				CEF099622A3998DC00A06B73 /* fonttest1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +330,6 @@
 			files = (
 				CEF0991C2A38039000A06B73 /* Persistence.swift in Sources */,
 				CEF099152A38038F00A06B73 /* ContentView.swift in Sources */,
-				CEF099532A39581C00A06B73 /* ResultView.swift in Sources */,
 				CEF099132A38038F00A06B73 /* AMomentsEndApp.swift in Sources */,
 				CEF099422A38089A00A06B73 /* GameLogic.swift in Sources */,
 				CEF099692A399A0D00A06B73 /* BrinkEffect.swift in Sources */,

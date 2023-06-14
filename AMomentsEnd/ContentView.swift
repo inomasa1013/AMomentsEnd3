@@ -8,7 +8,7 @@ struct ContentView: View{
 //タイトル画面 => 仕合い画面
             if !gameLogic.onGame {TitleView().environmentObject(gameLogic)
             }else{
-                OnGameView().environmentObject(gameLogic)
+            OnGameView().environmentObject(gameLogic)
             }
 //ゲームオーバー画面
             if gameLogic.gameOver
@@ -16,7 +16,6 @@ struct ContentView: View{
           }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().previewLayout(.fixed(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))

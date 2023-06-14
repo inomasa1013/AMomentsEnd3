@@ -16,10 +16,16 @@ struct GameOverView : View {
             KFImage(URL(string:"https://tshop.r10s.jp/auc-toysanta/cabinet/030gam140/g-4qoh000vqk-003.jpg?fitin=720%3A720"))
             HStack{
                 Button(action : { gameLogic.ReStart()}){
-                    Text("仕切り直し！")
+                    Text("しきりなおし！").font(.custom("FuwamokoFont",size:40))
+                        .foregroundColor(.purple)
+                        .background(Color.yellow.opacity(0.7))
+                        .cornerRadius(20)
                 }
                 Button(action:{gameLogic.GoTitle()}){
-                    Text("ばたんきゅ〜！")
+                    Text("ばたんきゅ〜！").font(.custom("FuwamokoFont",size:40))
+                        .foregroundColor(.purple)
+                        .background(Color.yellow.opacity(0.7))
+                        .cornerRadius(20)
                 }
             }
         }

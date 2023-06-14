@@ -45,16 +45,27 @@ struct OnGameView : View{
             }
             default :
                 ZStack{
-                    Text("完全勝利")
-                    HStack{
-                        Button(action : { gameLogic.ReStart()}){
-                            Text("もう一度遊ぶ！")
-                        }
-                        Button(action:{gameLogic.GoTitle()}){
-                            Text("ばいばい！")
+                    VStack{
+                        Text("完全勝利")
+                            .font(.custom("g_brushtappitsu_free_bold",size:40))
+                            .offset(y:150)
+                        Spacer(minLength: 10)
+                        HStack{
+                       
+                            Button(action : { gameLogic.ReStart()}){
+                                Text("もっとあそぶ！").font(.custom("FuwamokoFont",size:40))
+                                    .foregroundColor(.purple)
+                                    .background(Color.yellow.opacity(0.7))
+                                    .cornerRadius(20)
+                            }
+                            Button(action:{gameLogic.GoTitle()}){
+                                Text("ばいばい！").font(.custom("FuwamokoFont",size:40))
+                                    .foregroundColor(.purple)
+                                    .background(Color.yellow.opacity(0.7))
+                                    .cornerRadius(20)
+                            }
                         }
                     }
-                    
                 }
 
             }
