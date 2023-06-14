@@ -16,9 +16,10 @@ struct TitleView : View{
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Button(action : { gameLogic.StartGame()}) {
-                Text("仕合い開始！")
-                    .font(.title)
+                Text("仕合い開始！").font(.custom("g_brushtappitsu_free_bold",size:60))
                     .foregroundColor(.black)
+                    .blinkEffect(opacity:0.3...1 , interval:1)
+                    .offset(y:50)
             }
         }
         
