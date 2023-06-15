@@ -31,9 +31,12 @@ class GameLogic: ObservableObject {
         timer?.invalidate()
         attackCountTimer=0
         startCountTimer=0
-        onGame = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
+            self.onGame = true
+                }
+      
         print(onGame)
-        randomNumber = Double.random(in : 0.00 ... 5 )
+        randomNumber = Double.random(in : 1.30 ... 9 )
         print(randomNumber)
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) {
             [weak self] _ in
