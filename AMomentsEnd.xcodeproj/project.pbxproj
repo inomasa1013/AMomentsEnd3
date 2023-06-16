@@ -124,19 +124,19 @@
 			isa = PBXGroup;
 			children = (
 				CEF099562A3995F300A06B73 /* Info.plist */,
+				CEF099122A38038F00A06B73 /* AMomentsEndApp.swift */,
 				CEF099412A38089A00A06B73 /* GameLogic.swift */,
 				CEF099142A38038F00A06B73 /* ContentView.swift */,
 				CEF099432A38303100A06B73 /* TitleView.swift */,
 				CEF0994E2A38529000A06B73 /* OnGameView.swift */,
 				CEF099502A39577C00A06B73 /* GameOverView.swift */,
-				CEF099122A38038F00A06B73 /* AMomentsEndApp.swift */,
-				CEF0991B2A38039000A06B73 /* Persistence.swift */,
+				CEF099682A399A0D00A06B73 /* BrinkEffect.swift */,
 				CEF0991D2A38039000A06B73 /* AMomentsEnd.xcdatamodeld */,
 				CEF099162A38039000A06B73 /* Assets.xcassets */,
 				CEF0996A2A39C83E00A06B73 /* fuwamocofont */,
 				CEF099572A3998DC00A06B73 /* g_brushtappitsu_free_012 */,
 				CEF099182A38039000A06B73 /* Preview Content */,
-				CEF099682A399A0D00A06B73 /* BrinkEffect.swift */,
+				CEF0991B2A38039000A06B73 /* Persistence.swift */,
 			);
 			path = AMomentsEnd;
 			sourceTree = "<group>";

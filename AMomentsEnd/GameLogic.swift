@@ -25,18 +25,23 @@ class GameLogic: ObservableObject {
     @Published var timer : Timer?
     
     //stage関係
-    @Published var stage = 1
+    @Published var stage = 0
+    func frameFix(num:Double) -> Double{
+        return num * 0.03
+    }
     
     func StartGame(){
         timer?.invalidate()
+        attacked = false
         attackCountTimer=0
         startCountTimer=0
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
-            self.onGame = true
-                }
-      
-        print(onGame)
-        randomNumber = Double.random(in : 1.30 ... 9 )
+        stage+=1
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+            self.result=false
+        }
+        
+        self.onGame = true
+        randomNumber = Double.random(in : 1 ... 7 )
         print(randomNumber)
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) {
             [weak self] _ in
@@ -47,9 +52,18 @@ class GameLogic: ObservableObject {
                 AttackTimer()
             }
         }
-                   
+        
     }
-    
+    func AttackValue(){
+        print("attacked")
+ 
+        result = false
+        attacked = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.gameOver = true
+        }
+        timer?.invalidate()
+    }
     func AttackTimer(){
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval :0.01 , repeats :true) {
@@ -58,47 +72,60 @@ class GameLogic: ObservableObject {
             self.attackCountTimer += 0.01
             self.attackCountTimer = (self.attackCountTimer * 100 ).rounded() / 100
             switch stage{
-            case 1 : if attackCountTimer>0.8{
-                self.gameOver=true
-                timer?.invalidate()
+            case 1 : if attackCountTimer>frameFix(num: 100){
+                AttackValue()
             }
-            case 2 : if attackCountTimer>0.5{
-                self.gameOver=true
-                timer?.invalidate()
+            case 2 : if attackCountTimer>frameFix(num: 63){
+                AttackValue()
+            }
+            case 3 : if attackCountTimer>frameFix(num: 41){
+                AttackValue()
+            }
+            case 4 : if attackCountTimer>frameFix(num: 13){
+                AttackValue()
+            }
+            case 5 : if attackCountTimer>frameFix(num: 10){
+                AttackValue()
             }
             default : self.gameOver=false
             }
         }
-    
+        
     }
     
-    
     func Attack(){
-        attacked = !attacked
+        attacked = true
         print(attacked)
         timer?.invalidate()
         if startCountTimer < randomNumber {
             result = false
-            gameOver = true
-            print(result)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                self.gameOver = true
+            }
+            
         }else{
             result = true
-            stage+=1
-            print(result)
         }
+        randomNumber = 0
+        attackCountTimer = 0
+        startCountTimer = 0
     }
     
-    
     func ReStart(){
-        stage = 1
+        stage = 0
         randomNumber = 0
         attackCountTimer = 0
         startCountTimer = 0
         gameOver = false
+        StartGame()
     }
     func GoTitle(){
-   ReStart()
-        onGame = !onGame
+        stage = 0
+        randomNumber = 0
+        attackCountTimer = 0
+        startCountTimer = 0
+        gameOver = false
+        onGame = false
         gameOver = false
     }
     

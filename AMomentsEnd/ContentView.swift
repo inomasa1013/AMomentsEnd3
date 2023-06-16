@@ -9,23 +9,22 @@ struct ContentView: View {
             // タイトル画面 => 仕合い画面
             if !gameLogic.onGame {
                 TitleView().environmentObject(gameLogic)
-            } else {
+            } else if !gameLogic.gameOver{
                 OnGameView().environmentObject(gameLogic)
-            }
-            // ゲームオーバー画面
-            if gameLogic.gameOver {
+            } else {
                 GameOverView().environmentObject(gameLogic)
             }
         }
         .background(Color.black)
-        
     }
-    
+    //横向き固定
     var preferredInterfaceOrientation: UIInterfaceOrientation {
         return .landscapeLeft
     }
 }
 
+
+//プレビュー表示
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().previewLayout(.fixed(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
